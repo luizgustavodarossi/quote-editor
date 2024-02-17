@@ -55,6 +55,6 @@ jobs:
           gem install bundler audit
           bundle exec bundler audit
       - name: Security audit application code
-        run: bundle exec brakeman -q -w2
+        run: bin/brakeman -q -w2
       - name: Lint Ruby files
-        run: bundle exec rubocop --parallel
+        run: bin/rubocop --parallel
