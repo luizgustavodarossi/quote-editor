@@ -55,5 +55,6 @@ jobs:
           bundle install
       - name: Lint Ruby files
         run: | 
+          gem install rubocop
           rubocop --parallel
 
